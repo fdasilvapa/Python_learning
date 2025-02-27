@@ -1,5 +1,6 @@
 import string
 
+#Função para armazenar palavra por palavra do texto inserido
 def separar_palavras(texto):
     texto = texto.lower()
     texto = texto.translate(str.maketrans('', '', string.punctuation))
@@ -7,6 +8,7 @@ def separar_palavras(texto):
 
     return palavras
 
+#Função para contar a ocorrência de cada palavra
 def contar_palavras(lista):
     contagem = {}
     for palavra in lista:
